@@ -1,0 +1,39 @@
+$base-color: #3C8DBC;
+$grey: #dddddd;
+$light-grey: #f3f3f3;
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    min-width: 400px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+
+    & thead tr {
+        background-color: $base-color;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    & th, td {
+        padding: 12px 15px;
+    }
+
+    & tbody tr {
+        border-bottom: 1px solid $grey;
+
+        &:nth-of-type(even) {
+            background-color: $light-grey;
+        }
+
+        &:last-of-type {
+            border-bottom: 1px solid $base-color;
+        }
+    }
+
+
+
+}
